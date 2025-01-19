@@ -9,7 +9,6 @@ const bot = new Telegraf(botToken);
 
 
 
-
 bot.start(async (ctx) => {
     console.log('New interaction from', ctx.from.first_name)
     const message = `Welcome to TangoStore, your one-stop destination for effortless shopping! Whether you're looking for the latest fashion trends, tech gadgets, home essentials, or gifts for your loved ones, TangoStore has got you covered. You are special to us, ${ctx.from.first_name} ${ctx.from.last_name}`
